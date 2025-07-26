@@ -1,0 +1,59 @@
+.sidebar{
+    padding:20px 10px;
+    height:100vh;
+    overflow: auto;
+    background-color:var(--bgcolor);
+    color:var(--color);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.sidebar svg{
+    width:20px;
+    height:20px;
+    color:var(--color);
+}
+#hamb{
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.newchat{
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    gap:10px;
+    background-color: var(--bgcolor);
+    padding:10px;
+    border-radius:30px;
+    cursor: pointer;
+    transition:all 0.2s;
+}
+
+.recent{
+    display:flex;
+    align-items:start;
+    justify-content: center;
+    gap:10px;
+    padding:10px;
+    border-radius:30px;
+    cursor: pointer;
+    transition:all 0.2s;
+    overflow: auto;
+}
+
+.recent:hover{
+ background-color: rgb(57, 56, 56);
+}
+
+.newchat:hover{
+ background-color: rgb(57, 56, 56);
+}  
+
+
+@media (max-width:600px) {
+  .sidebar{
+    display:none;
+  }
+}
